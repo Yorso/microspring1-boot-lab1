@@ -24,14 +24,14 @@ public class TeamController {
 
 		Team team = new Team();
 		team.setId(0l);
-		team.setLocation("Madrid");
-		team.setName("Atlético de Madrid");
+		team.setLocation("Los Angeles");
+		team.setName("Los Angeles Lakers");
 		list.add(team);
 
 		team = new Team();
 		team.setId(1l);
-		team.setLocation("León");
-		team.setName("Cultural Leonesa");
+		team.setLocation("Chicago");
+		team.setName("Chicago Bulls");
 		list.add(team);
 
 		return list;
