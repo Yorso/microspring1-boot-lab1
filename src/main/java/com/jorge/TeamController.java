@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+//Este controlador es para cuando usemos Spring Data JPA Repositories. Si usamos Spring Data REST Repositories
+//no necesitamos ningún controlador, ya que es el Repository quien se encarga de decirle a la vista qué hay que mostrar
 @RestController
 public class TeamController {
 
 	@Autowired
-	private TeamRepository teamRepository;
+	private TeamRepositoryJPA teamRepository;
 
 	@RequestMapping("/teams") //http://localhost:8080/teams
 	public List<Team> getTeams() {
