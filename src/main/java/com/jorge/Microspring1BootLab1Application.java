@@ -37,5 +37,7 @@ public class Microspring1BootLab1Application {
 		list.add(team);
 
 		teamRepository.save(list);
+		
+		
 	}
 }
